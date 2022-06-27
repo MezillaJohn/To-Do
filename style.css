@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: rgb(26, 26, 26);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 50rem;
+  height: 90vh;
+  background-color: rgb(33, 32, 32);
+  padding: 3rem;
+  overflow: auto;
+}
+
+.todo-heading {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3rem;
+  color: #a7a5ab;
+  margin-bottom: 4rem;
+}
+
+.task-form {
+  width: 100%;
+  margin-bottom: 6rem;
+}
+
+.task-label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #a7a5ab;
+  text-transform: uppercase;
+}
+
+.task-input {
+  display: inline-block;
+  padding: 1rem 2rem;
+  width: 60%;
+  font-size: inherit;
+  color: #fff;
+  background-color: rgb(16, 16, 16);
+  border: none;
+  border-bottom: 1px solid #3c1db9;
+}
+
+.task-input:focus {
+  outline: none;
+  border-bottom: 2px solid #6b6a6e;
+}
+
+.task-button {
+  background-color: #3c1db9;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  padding: 1rem 2rem;
+  margin-left: 3rem;
+  font-size: 1.6rem;
+}
+
+.filter {
+  display: inline-block;
+  padding: 1rem 2rem;
+  width: 63%;
+  font-size: inherit;
+  color: inherit;
+  background-color: rgb(16, 16, 16);
+  border: none;
+  border-bottom: 1px solid#6b6a6e;
+  margin-bottom: 3rem;
+}
+
+.filter:focus {
+  outline: none;
+  border-bottom: 2px solid #6b6a6e;
+}
+
+.task {
+  width: 100%;
+}
+
+.task-list {
+  color: #a7a5ab;
+  margin-bottom: 1rem;
+}
+
+.task-content {
+  width: 100%;
+  list-style: none;
+  margin-bottom: 3rem;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  border: 0.1px solid #777;
+  padding: 1rem 1.5rem;
+  background-color: rgb(16, 16, 16);
+}
+
+.task-link {
+  text-decoration: none;
+  color: rgb(215, 215, 215);
+}
+
+.delete {
+  color: red;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.clear-task {
+  background-color: #3c1db9;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 550px) {
+  html {
+    font-size: 50%;
+  }
+
+  .task-input {
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+  .task-button {
+    margin-left: 0;
+    width: 35%;
+  }
+}
